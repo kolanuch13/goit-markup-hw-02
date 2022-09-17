@@ -5,6 +5,7 @@
     --add-color: #ffffff;
     --specific-color: #F5F4FA;
     --background-color: #2F303A;
+    --footer-text: #ffffff66;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 }
 
 .list {
+    font-style: normal;
     list-style-type: none;
 }
 
@@ -65,7 +67,8 @@ body {
     color: var(--main-color);
 }
 
-.contact, .contact:visited {
+.header .contact, 
+.header .contact:visited {
     color: var(--back-color);
 }
 
@@ -97,7 +100,7 @@ body {
     cursor: pointer;
 }
 
-.filter .button {
+.project .button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -212,6 +215,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--add-color);
+
 }
 
 .location:hover,
@@ -220,4 +224,8 @@ body {
     color: var(--brand-color);
 }
 
+.address .contact 
+.address .contact:visited {
+    color: var(--footer-text);
+}
 
