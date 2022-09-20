@@ -15,12 +15,14 @@ body {
 
 .logo-link,
 .nav,
-.contact,
+.header-contact,
+.footer-contact,
 .location {
     text-decoration: none;
 }
 
-.list {
+.list,
+.list-footer {
     font-style: normal;
     list-style-type: none;
 }
@@ -63,31 +65,32 @@ body {
     letter-spacing: 0.02em;
 }
 
-.nav, .nav:visited {
+.nav, 
+.nav:visited {
     color: var(--main-color);
 }
 
-.header .contact, 
-.header .contact:visited {
+.header-contact, 
+.header-contact:visited {
     color: var(--back-color);
 }
 
 .nav:hover,
 .nav:focus,
 .nav:active,
-.contact:hover,
-.contact:focus,
-.contact:active {
+.header-contact:hover,
+.header-contact:focus,
+.header-contact:active {
     color: var(--brand-color);
 }
 
 /*---BUTTONS---*/
 
-.button {
+[class*="button"] {
     font-family: 'Roboto', sans-serif;
 }
 
-.hero .button {
+.hero-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -100,7 +103,7 @@ body {
     cursor: pointer;
 }
 
-.project .button {
+.project-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -124,7 +127,7 @@ body {
     background-color: var(--background-color);
 }
 
-.hero .title {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -134,7 +137,7 @@ body {
     color: var(--add-color);
 }
 
-.title {
+.features-title {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -142,14 +145,15 @@ body {
         text-transform: uppercase;
 }
 
-.descript {
+.features-descript {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
     color: var(--back-color);
 }
 
-.section {
+.team-section,
+.employment-section {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -161,14 +165,14 @@ body {
     background-color: var(--specific-color);
 }
 
-.section-card {
+.team-card {
     background-color: var(--add-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team .name {
+.team-name {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
@@ -176,7 +180,7 @@ body {
         letter-spacing: 0.03em;
 }
 
-.team .position {
+.team-position {
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
@@ -186,18 +190,18 @@ body {
 
 /*---PORTFOLIO---*/
 
-.project .card {
+.project-card {
     border: 1px solid #EEEEEE;
 }
 
-.project .title {
+.project-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
 }
 
-.project .descript {
+.project-descript {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -220,12 +224,15 @@ body {
 
 .location:hover,
 .location:focus,
-.location:active {
+.location:active,
+.footer-contact:hover,
+.footer-contact:focus,
+.footer-contact:active {
     color: var(--brand-color);
 }
 
-.address .contact 
-.address .contact:visited {
+.footer-contact, 
+.footer-contact:visited {
     color: var(--footer-text);
 }
 
