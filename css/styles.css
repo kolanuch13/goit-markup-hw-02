@@ -5,7 +5,7 @@
     --add-color: #ffffff;
     --specific-color: #F5F4FA;
     --background-color: #2F303A;
-    --footer-text: #ffffff66;
+    --footer-text: #ffffff99;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
 
 .logo-link,
 .nav,
+.main-nav,
 .header-contact,
 .footer-contact,
 .location {
@@ -70,14 +71,16 @@ body {
     color: var(--main-color);
 }
 
+.main-nav,
+.main-nav:visited {
+    color: var(--brand-color);
+}
+
 .header-contact, 
 .header-contact:visited {
     color: var(--back-color);
 }
 
-.nav:hover,
-.nav:focus,
-.nav:active,
 .header-contact:hover,
 .header-contact:focus,
 .header-contact:active {
@@ -114,8 +117,10 @@ body {
     cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.hero-button:hover,
+.hero-button:focus,
+.project-button:hover,
+.project-button:focus {
     color: var(--add-color);
     background-color: var(--brand-color);
     cursor: pointer;
@@ -205,6 +210,7 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    color: var(--back-color);
 }
 
 /*---FOOTER---*/
