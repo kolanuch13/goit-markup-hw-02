@@ -28,7 +28,48 @@ body {
     list-style-type: none;
 }
 
-/*--LOGO---*/
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display:block;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.features-container {
+    padding-bottom: 47px;
+}
+
+.employment-container {
+    padding-top: 47px;
+}
+
+/*----LOGO----*/
 
 .logo-link {
     font-family: 'Raleway', sans-serif;
@@ -57,7 +98,27 @@ body {
     color: var(--add-color);
 }
 
-/*--HEADER---*/
+/*----HEADER-----*/
+
+.page-header-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*column-gap: 344px;*/
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 90px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
 
 .header {
     font-weight: 500;
@@ -87,23 +148,26 @@ body {
     color: var(--brand-color);
 }
 
-/*---BUTTONS---*/
+/*----BUTTONS----*/
 
 [class*="button"] {
     font-family: 'Roboto', sans-serif;
 }
 
 .hero-button {
+    display: flex;
+    width: 216px;
+    height: 50px;
+    align-items: center;
+    
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--specific-color);
     border: none;
-    cursor: pointer;
 }
 
 .project-button {
@@ -114,7 +178,6 @@ body {
     letter-spacing: 0.03em;
     background-color: var(--specific-color);
     border: none;
-    cursor: pointer;
 }
 
 .hero-button:hover,
@@ -123,12 +186,21 @@ body {
 .project-button:focus {
     color: var(--add-color);
     background-color: var(--brand-color);
-    cursor: pointer;
 }
 
-/*---STUDIO---*/
+/*----STUDIO----*/
 
-/*--MAIN--*/
+/*---MAIN---*/
+
+/*--HERO-*/
+
+.page-hero-container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
 
 .hero {
     background-color: var(--background-color);
@@ -193,7 +265,9 @@ body {
     color: var(--back-color);
 }
 
-/*---PORTFOLIO---*/
+/*----PORTFOLIO----*/
+
+/*---PROJECT---*/
 
 .project-item {
     border: 1px solid #EEEEEE;
@@ -213,7 +287,7 @@ body {
     color: var(--back-color);
 }
 
-/*---FOOTER---*/
+/*----FOOTER----*/
 
 .footer {
     background-color: var(--background-color);
